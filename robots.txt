@@ -1,0 +1,45 @@
+# Bloom & Blossom Fresh Flower Shop - robots.txt
+# SEO Optimization for Search Engines
+
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+Allow: *.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow private or admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Specific crawler directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://tolipflower.vercel.app/sitemap.xml
+
+# Cache control
+# Cache this file for 30 days
+Cache-Control: max-age=2592000
+
+# Additional search engine optimization directives
+User-agent: *
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
+
+# Prevent crawling of duplicate content
+Disallow: /*?*sort=
+Disallow: /*?*filter=
